@@ -1,0 +1,15 @@
+on placeholderapi placeholder request for the prefix "player":
+    if the identifier is "device": # The placeholder would be 'custom_message'
+        if the player is online:
+            set {_device} to device of floodgate player
+            if {_device} is equal to "UWP":
+                set the result to "Windows"
+
+            else if {_device} is equal to "OS X":
+                set the result to "macOS"
+
+            else if {_device} is equal to "Unknown":
+                set the result to "Bedrock"
+
+            else:
+                set the result to {_device}
