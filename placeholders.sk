@@ -1,5 +1,5 @@
 on placeholderapi placeholder request for the prefix "player":
-    if the identifier is "device": # The placeholder would be 'custom_message'
+    if the identifier is "device":
         if the player is online:
             set {_device} to device of floodgate player
             if {_device} is equal to "UWP":
